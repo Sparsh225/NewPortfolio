@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.text-gradient {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  /* Add this to your CSS file or inside a <style> tag in your component */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  overflow-x: visible;
+}
+
+.carousel-arrow.left {
+  left: 30px; /* Adjust this value to position the arrow further to the left */
+  overflow-x: visible;
+}
+
+.carousel-arrow.right {
+  right: 40px; /* Adjust this value to position the arrow further to the right */
+}
+
+.owl-carousel {
+  overflow: visible; /* Ensure carousel items are visible */
+} 
+/* Add this to your CSS file */
+.skill-slider {
+  padding-left: 90px; /* Adjust the value to increase or decrease the space */
+}
